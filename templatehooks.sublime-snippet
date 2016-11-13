@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+Template.$1.onCreated(function(){
+  var self = this;
+  self.dataDict = new ReactiveDict();
+});
+
+Template.$1.helpers({
+
+});
+
+Template.$1.onRendered(function(){
+
+})
+
+Template.$1.events({
+
+});
+
+Template.$1.onDestroyed(function(){
+
+});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>tpd</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>
