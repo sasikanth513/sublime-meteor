@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-Template.$1.onCreated(function(){
+Template.$1.onCreated( () => {
   var self = this;
   self.dataDict = new ReactiveDict();
 });
@@ -9,7 +9,7 @@ Template.$1.helpers({
 
 });
 
-Template.$1.onRendered(function(){
+Template.$1.onRendered( () => {
 
 })
 
@@ -17,7 +17,7 @@ Template.$1.events({
 
 });
 
-Template.$1.onDestroyed(function(){
+Template.$1.onDestroyed( () => {
 
 });
 ]]></content>

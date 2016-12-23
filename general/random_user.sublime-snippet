@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+https://randomuser.me/api/portraits/thumb/men/${1}.jpg
+]]></content> 
+   <tabTrigger>ruser</tabTrigger>
+</snippet>
