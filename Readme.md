@@ -59,6 +59,27 @@ Folders.
     });
     ```
 
+> ### react
+
+- component skelton.
+    ```sh
+    cmp
+    ```
+    
+    snippet
+
+    ```
+    import React from 'react';
+
+    export default class $1 extends React.Component {
+      render() {
+        return (
+          
+        );
+      }
+    }
+    ```
+
 > ### toastr
 
 - toastr error `toastr.error("$1", "Error");`.
