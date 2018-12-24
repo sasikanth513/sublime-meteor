@@ -59,7 +59,7 @@ Folders.
     });
     
     Template.$1.onRendered( () => {
-    
+        const t = this;
     })
     
     Template.$1.events({
@@ -67,7 +67,7 @@ Folders.
     });
     
     Template.$1.onDestroyed( () => {
-    
+        const t = this;
     });
     ```
 

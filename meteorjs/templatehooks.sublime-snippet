@@ -4,8 +4,8 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 
 Template.$1.onCreated(function onCreated() {
-  const self = this;
-  self.dataDict = new ReactiveDict();
+  const t = this;
+  t.dataDict = new ReactiveDict();
 });
 
 Template.$1.helpers({
@@ -13,7 +13,7 @@ Template.$1.helpers({
 });
 
 Template.$1.onRendered(function onRendered() {
-
+  const t = this;
 });
 
 Template.$1.events({
@@ -21,7 +21,7 @@ Template.$1.events({
 });
 
 Template.$1.onDestroyed(function onDestroyed() {
-
+  const t = this;
 });
 
 ]]></content>
