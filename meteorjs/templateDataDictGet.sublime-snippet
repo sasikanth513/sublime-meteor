@@ -1,9 +1,10 @@
 <snippet>
-  <content>
-    <![CDATA[toastr.success("$1");]]>
-  </content>
+  <content><![CDATA[
+const t = Template.instance();
+const ${1} = t.dataDict.get('${1}');
+]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>ts</tabTrigger>
+  <tabTrigger>tdg</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
 </snippet>

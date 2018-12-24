@@ -14,11 +14,25 @@ Folders.
     ```
 
 
-- console logging `console.log($1);`
+- console logging: default color `console.log($1);`
     ```sh
     lg
     ```
 
+- console logging: blue color `console.log($1);`
+    ```sh
+    lgb
+    ```
+
+- console logging: green color `console.log($1);`
+    ```sh
+    lgg
+    ```
+
+- console logging: red color `console.log($1);`
+    ```sh
+    lgr
+    ```
 
 > ### meteorjs
 
@@ -36,8 +50,8 @@ Folders.
 
     ```
     Template.$1.onCreated( () => {
-      var self = this;
-      self.dataDict = new ReactiveDict();
+      const t = this;
+      t.dataDict = new ReactiveDict();
     });
     
     Template.$1.helpers({
@@ -52,12 +66,45 @@ Folders.
     
     });
     
-    
-    
     Template.$1.onDestroyed( () => {
     
     });
     ```
+
+- to `get` dataDict(reactive-dict from above snippet) value inside template helpers.
+    ```sh
+    tpg
+    ```
+
+    snippet
+
+    ```
+    const t = Template.instance();
+    const ${1} = t.dataDict.get('${1}');
+    ```
+
+- to `set` dataDict(reactive-dict from above snippet) value inside template helpers.
+    ```sh
+    tpg
+    ```
+
+    snippet
+
+    ```
+    const t = Template.instance();
+    t.dataDict.set('${1}', ${1});
+    ```
+- Template instance inside helpers.
+    ```sh
+    ti
+    ```
+
+    snippet
+
+    ```
+    const t = Template.instance();
+    ```
+    
 
 > ### react
 
@@ -82,17 +129,22 @@ Folders.
 
 > ### toastr
 
-- toastr error `toastr.error("$1", "Error");`.
+- toastr error `toastr.error("$1");`.
     ```sh
     te
     ```
+
+- toastr warning `toastr.warning("$1");`.
+    ```sh
+    tw
+    ```
     
-- toastr info `toastr.info("$1", "Info");`.
+- toastr info `toastr.info("$1");`.
     ```sh
     ti
     ```
     
-- toastr error `toastr.success("$1", "Success");`.
+- toastr error `toastr.success("$1");`.
     ```sh
     ts
     ```

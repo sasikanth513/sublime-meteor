@@ -1,7 +1,10 @@
 <snippet>
   <content><![CDATA[
-Template.$1.onCreated( () => {
-  var self = this;
+import { Template } from 'meteor/templating';
+import { ReactiveDict } from 'meteor/reactive-dict';
+
+Template.$1.onCreated(function onCreated() {
+  const self = this;
   self.dataDict = new ReactiveDict();
 });
 
@@ -9,17 +12,18 @@ Template.$1.helpers({
 
 });
 
-Template.$1.onRendered( () => {
+Template.$1.onRendered(function onRendered() {
 
-})
+});
 
 Template.$1.events({
 
 });
 
-Template.$1.onDestroyed( () => {
+Template.$1.onDestroyed(function onDestroyed() {
 
 });
+
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>tpd</tabTrigger>
